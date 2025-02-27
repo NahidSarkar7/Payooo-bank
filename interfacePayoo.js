@@ -11,6 +11,9 @@ document.getElementById('Add-money').addEventListener('click', function(){
    const tHistry =document.getElementById('section');
    tHistry.style.display='none';
 
+    const rechargeSection =document.getElementById('Recharge-section');
+  rechargeSection.style.display='none'
+
 
    const addMoney =document.getElementById('adding-money-section');
    addMoney.style.display='block';
@@ -69,6 +72,8 @@ const add =document.getElementById('add')
      console.log(p)
 
      Container2.appendChild(p);
+
+     
 
      p.style.backgroundColor='red';
      p.style.color='white';
@@ -191,7 +196,6 @@ else{
 
    const cashOut= document.getElementById('Cashout');
    cashOut.style.display='none';
-
     const tHistry =document.getElementById('section');
     tHistry.style.display='none';
 
