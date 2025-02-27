@@ -190,7 +190,10 @@ else{
    addMoney.style.display='none';
 
    const cashOut= document.getElementById('Cashout');
-   cashOut.style.display='none'
+   cashOut.style.display='none';
+
+    const tHistry =document.getElementById('section');
+    tHistry.style.display='none';
 
 
   })
