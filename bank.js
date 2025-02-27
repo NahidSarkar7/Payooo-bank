@@ -17,7 +17,16 @@ document.getElementById('btn')
     if(input.length === 11){
         console.log('yes');
 
-        if(password.length === 4){
+       
+
+        if(password.length === 4 && password === '4321'){
+
+            // if(password === '4321'){
+            //     return alert('Incorrect password')
+            // }
+            // else{
+
+            // }
 
             console.log('access grantted');
             window.location.href='index.html' ;

@@ -3,16 +3,24 @@ document.getElementById('Add-money').addEventListener('click', function(){
     console.log("add money ok");
 
     const paymentList = document.getElementById('payment-list');
-   paymentList.style.display='none'
+   paymentList.style.display='none';
 
    const cashOut= document.getElementById('Cashout');
-   cashOut.style.display='none'
+   cashOut.style.display='none';
+
+   const tHistry =document.getElementById('section');
+   tHistry.style.display='none';
 
 
    const addMoney =document.getElementById('adding-money-section');
    addMoney.style.display='block';
 
-   
+   const amount = document.getElementById('amount');
+   const accountNumber=document.getElementById('account-number');
+
+
+ 
+
 
 })
 
@@ -23,7 +31,7 @@ const add =document.getElementById('add')
 
     event.preventDefault();
 
-   console.log('hello');
+
 
    const accNumber = document.getElementById('account-number');
    const accountNumber = accNumber.value ;
@@ -44,6 +52,30 @@ const add =document.getElementById('add')
      sum=mainAmount+mainDollar;
      console.log(sum);
      document.getElementById('dollar').innerText=sum;
+
+    //  const section =document.getElementById('section');
+
+     const Container2 = document.getElementById('container2');
+    
+     
+     const p =document.createElement('p');
+
+     p.innerText=`
+     
+     add money ${mainAmount } from ${accountNumber}
+     
+     `
+
+     console.log(p)
+
+     Container2.appendChild(p);
+
+     p.style.backgroundColor='red';
+     p.style.color='white';
+     p.style.textAlign='center';
+     p.style.marginBottom='2px';
+     p.style.marginTottom='2px';
+     p.style.borderRadius='20px';
 
       
     }
@@ -71,11 +103,13 @@ const add =document.getElementById('add')
     const addMoney =document.getElementById('adding-money-section');
     addMoney.style.display='none';
       const paymentList = document.getElementById('payment-list');
-   paymentList.style.display='none'
+   paymentList.style.display='none';
    const rechargeSection =document.getElementById('Recharge-section');
-  rechargeSection.style.display='none'
+  rechargeSection.style.display='none';
+  const tHistry =document.getElementById('section');
+  tHistry.style.display='none';
    const cashOut= document.getElementById('Cashout');
-   cashOut.style.display='block'
+   cashOut.style.display='block';
 
 
    
@@ -110,6 +144,29 @@ if( cashOutPin.length === 4 && agentNumber.length === 11 && cashAmount !== ''){
 
  const sum = mainDollar-cashAmount;
  document.getElementById('dollar').innerText=sum;
+
+
+ const Container2 = document.getElementById('container2');
+    
+     
+ const p =document.createElement('p');
+
+ p.innerText=`
+ 
+ Cash-out money ${cashAmount } from ${agentNumber}
+ 
+ `
+
+ console.log(p)
+
+ Container2.appendChild(p);
+
+ p.style.backgroundColor='blue';
+ p.style.color='white';
+ p.style.textAlign='center';
+ p.style.marginBottom='2px';
+ p.style.marginTottom='2px';
+ p.style.borderRadius='20px'
 
 }
 else{
@@ -166,6 +223,32 @@ if( cashOutPin.length === 4 && agentNumber.length === 11 && cashAmount !== ''){
 
  const sum = mainDollar-cashAmount;
  document.getElementById('dollar').innerText=sum;
+
+
+ 
+ const Container2 = document.getElementById('container2');
+    
+     
+ const p =document.createElement('p');
+
+ p.innerText=`
+ 
+ Recharged money ${cashAmount } from ${agentNumber}
+ 
+ `
+
+ console.log(p)
+
+ Container2.appendChild(p);
+
+ p.style.backgroundColor='indigo';
+ p.style.color='white';
+ p.style.textAlign='center';
+ p.style.marginBottom='2px';
+ p.style.marginTottom='2px';
+ p.style.borderRadius='20px';
+
+ 
 
 }
 else{

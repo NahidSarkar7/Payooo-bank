@@ -51,7 +51,7 @@
                         <span class="text-gray-400">Cash-out</span>
                     </div>
 
-                    <div class="border-2 pt-4 pb-4 pl-5 pr-5 rounded-md mt-5">
+                    <div id="Transaction-history" class="border-2 pt-4 pb-4 pl-5 pr-5 rounded-md mt-5">
                         <img class="mx-auto" src="assets/wallet1.png" alt="">
 
                         <span class="text-gray-400">Transaction</span>
@@ -245,13 +245,13 @@
                            
                             <label class="label">
                               <span class="label-text">Selelect method</span>
-                              <select class="select">
+                              <select id="selec-method" class="select">
 
                                 <option disabled selected>pick method</option>
-                                <option value="">Uppay</option>
-                                <option value="">Nagad</option>
-                                <option value="">Bkash</option>
-                                <option value="">Rocket</option>
+                                <option value="Uppay">Uppay</option>
+                                <option value="Nagad">Nagad</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Rocket">Rocket</option>
 
 
                             </select>
@@ -427,6 +427,19 @@
                 </div>
               </div>
 
+              <!-- Transaction-section -->
+
+              <section id="section" class="hidden">
+
+                <h1 id="transaction-heading" class="text-xl font-bold text-white bg-sky-300 mb-5 w-10/12 mx-auto rounded-md p-3 text-center">Your Transaction</h1>
+
+                <div id="container2" class="w-10/12 mx-auto">
+               
+
+                </div>
+
+              </section>
+
                
                 
             </header>
@@ -434,6 +447,7 @@
     </section>
 
    <script src="interfacePayoo.js"></script>
+   <script src="transaction.js"></script>
 
 </body>
 </html>
